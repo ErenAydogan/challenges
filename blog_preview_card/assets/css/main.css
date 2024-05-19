@@ -9,53 +9,79 @@
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #F4D04E;
     width: 98vw;
     height: 98vh;
-    font-family: "Figtree", sans-serif;
+    background-color: #F4D04E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 10px;
 }
 
 .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: white;
     width: 38.4em;
-    height: 52.2em;
-    border-radius: 1.2em;
-    border: 1px solid #000;
-    box-shadow: .8em .8em #000;
+    padding: 2.4em;
+    border-radius: 2em;
+    box-shadow: .8em .8em black;
 }
-
 .card-container {
+    width: 33.6em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    padding: 2.4em;
+    row-gap: 2.4em;
 }
 
 .card-container__image {
-    width: 33.6em;
-    border-radius: 1.2em;
-    margin-bottom: 2.4em;
+    width: 100%;
+    border-radius: 1em;
 }
 
 .card-container__details {
     display: flex;
-    height: 19.4em;
     flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 2.4em;
+    row-gap: 1.2em;
 }
 
 .card-container__details-tag {
-    font-size: 1.4em;
-    font-weight: bold;
+    align-self: flex-start;
     background-color: #F4D04E;
+    padding: .4em 1.2em;
+    border-radius: .4em;
+    font-size: 1.4em;
+    line-height: 150%;
+}
+
+.card-container__details-date {
+    font-size: 1.4em;
+    line-height: 150%;
+}
+
+.card-container__details-title {
+    font-size: 2.4em;
+    line-height: 150%;
+    font-weight: 400;
+    
+}
+
+.card-container__details-desc {
+    color: #7F7F7F;
+    font-size: 1.6em;
+    line-height: 150%;
+}
+
+.card-container__author-container {
+    display: flex;
+    align-items: center;
+}
+
+.card-container__author-container__img{
+    width: 3.2em;
+    height: 3.2em;
+    margin-right: 1.2em;
+}
+
+.card-container__author-container__name {
+    font-size: 1.4em;
+    line-height: 150%;
 }
