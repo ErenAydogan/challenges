@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98vw;
+    background-color: #F3E5D7;
+    font-size: 10px;
+    font-family: "Outfit", sans-serif;
+}
+
+hr {
+    display: block;
+    height: .1em;
+    border: 0;
+    border-top: .1em solid #E3DDD7;
+    margin-bottom: 3.2em;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 73.6em;
+    border-radius: 2.4em;
+}
+
+.container__image {
+    width: calc(100% - 8em);
+    margin: 4em 4em 2em;
+}
+
+.container__content{
+    width: calc(100% - 8em);
+    margin: 2em 4em 4em;
+}
+
+.container__content__details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.2em;
+}
+
+.container__content__details-title{
+    font-family: "Young Serif", serif;
+    font-size: 4em;
+    color: #312E2C;
+}
+.container__content__details-description{
+    color: #5F564D;
+    font-size: 1.6em;
+    line-height: 150%;
+}
+
+.container__content__preparation {
+    position: relative;
+    background-color: #FFF7FB;
+    padding: 2.8em;
+    margin-bottom: 3.2em;
+}
+.container__content__preparation-title {
+    font-family: "Young Serif", serif;
+    color: #7A284E;
+    font-size: 2em;
+    margin-bottom: .8em;
+}
+.container__content__preparation-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__content__preparation-list__item {
+    font-size: 1.6em;
+    line-height: 150%;
+    color: #5F564D;
+    margin-left: 2em;
+}
+
+.container__content__preparation-list__item::marker {
+    color: #854632;
+    margin-right: 1.6;
+}
+
+.container__content__preparation-list__item:not(:last-child) {
+    margin-bottom: .8em;
+}
+
+.container__content__preparation-list__item span {
+    font-weight: bold;
+}
+
+.container__content__ingredients {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.2em;
+}
+
+.container__content__ingredients-title {
+    font-family: "Young Serif", serif;
+    color: #854632;
+    font-size: 2.8em;
+    margin-bottom: .8em;
+}
+
+.container__content__ingredients-list {
+    margin-left: 2em;
+}
+
+.container__content__ingredients-list__item {
+    color: #5F564D;
+    font-size: 1.6em;
+    line-height: 150%;
+}
+
+.container__content__ingredients-list__item::marker {
+    color: #854632;
+    margin-right: 1.6;
+}
+
+.container__content__instructions {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.2em;
+}
+
+.container__content__instructions-title {
+    font-family: "Young Serif", serif;
+    color: #854632;
+    font-size: 2.8em;
+    margin-bottom: .8em;
+}
+
+
+.container__content__instructions-list{
+    margin-left: 2em;
+}
+
+.container__content__instructions-list__item {
+    position: relative;
+    color: #5F564D;
+    font-size: 1.6em;
+    line-height: 150%;
+}
+
+.container__content__instructions-list__item::marker {
+    color: #854632;
+}
+
+.container__content__instructions-list__item span{
+    font-weight: bolder;
+}
+
+.container__content__nutrition {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__content__nutrition-title {
+    font-family: "Young Serif", serif;
+    color: #854632;
+    font-size: 2.8em;
+    margin-bottom: .8em;
+}
+
+.container__content__nutrition-desc {
+    margin-bottom: .8em;
+    font-size: 1.6em;
+}
+
+.container__content__nutrition-table {
+    display: table;
+    text-align: left;
+}
+.container__content__nutrition-table__item {
+    font-size: 1.2em;
+    line-height: 150%;
+}
+.container__content__nutrition-table__item td {
+    border-bottom: 1px solid #E3DDD7;
+    padding: 1.2em 2em;
+}
+
+.container__content__nutrition-table__item-1 {
+    font-size: 1.6em;
+    line-height: 150%;
+    color: #5F564D;
+}
+
+.container__content__nutrition-table__item-2 {
+    font-size: 1.6em;
+    line-height: 150%;
+    color: #854632;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 375px) {
+    
+    body {
+        display: unset;
+        height: unset;
+        background-color: unset;
+    }
+
+    .container {
+        background-color: white;
+        max-width: 73.6em;
+        border-radius: unset;
+    }
+
+    .container__image {
+        width: 100%;
+        margin: 0 0 2em;
+    }
+}
